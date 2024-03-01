@@ -1,0 +1,446 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  /* width:  */
+  /* display: flex; */
+  flex-direction: row;
+  background: #31006E;
+  padding: 10px;
+}
+header img{
+  width: 220px;
+  height: auto;
+
+}
+.navbar{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo{
+
+}
+ul li{
+  display: inline-block;
+  flex-direction: column;
+  text-decoration: none;
+  list-style-type: none;
+}
+li a{
+  text-decoration: none;
+  padding: 20px;
+
+}
+
+
+#intro{
+  display: flex;
+  flex-direction: column;
+  background-color: #31006E;
+  background-image:url(images/banner-pattern.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+
+}
+.container{
+  margin: 0 190px 0 190px;
+
+}
+#intro .growing{
+  font-size: 32px;
+  color: white;
+}
+
+section{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+#white_box{
+background-color: white;
+padding: 20px 30px;
+margin-top: 30px;
+width: 590px;
+height: 250px;
+}
+/*  */
+#white_box small{
+  color:#7f7f7f;
+}
+#white_box h2{
+  color: purple;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#white_box p{
+  color:#bc188d;
+}
+.w50{
+  width: 50%;
+  color: black;
+}
+
+#whoweare p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#whoweare{
+  background-image: url(images/building.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 500px 400px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+ }
+ #work{
+  background: #00ADEE;
+  text-align: center;
+  color: white;
+ }
+
+ .btn{
+  border: 1px solid #31006f;
+  padding: 15px 20px; 
+  border-radius: 4px;
+  text-decoration: none;
+  color: #31006f;
+  display:inline-block; /* value of display is inline in p block */
+ }
+ .btn:hover{
+  background-color: #bc199d;
+  color: white;
+ }
+ #btn-white{
+  color: white;
+  border-color: white;
+ }
+
+#parallax{
+  height: 400px;
+  background-image: url(images/parallax-home.jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+.fa-chevron-right{
+  font-size: 20px;
+  color: #31006E;
+}
+
+#vacancy{
+  list-style-type: none;
+}
+.menu{
+  padding-left: 500px;
+}
+.menu a{
+  padding: 30px;
+  color:white;
+}
+#vacancy {
+  display: flex;
+  flex-direction: column;
+}
+#vacancy a{
+  text-decoration: none;
+  color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+#vacancy a:hover{
+  color: black;
+}
+
+#vacancy a i{
+  float: right;
+
+}
+#team .join{
+  color: black;
+}
+
+.search{
+  display: flex;
+  flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ 
+
+
+}
+.search_image{
+  align-items: center;
+}
+
+.corporate{
+  color: white;
+  background-image: url(images/csr-graphics.png), url(images/csr-section-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 100px;
+}
+.corporate #text{
+  font-size: 15px;
+  width: 360px;
+}
+#parallax{
+  background-image: url(images/parallax-home.jpg);
+}
+.navigate{
+  display: flex;
+}
+
+/* footer */
+.Contact_section{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
+
+
+.navigate{
+  display: flex;
+  flex-direction: column;
+}
+.block-title{
+  font-size: 22px;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin: 10px; */
+}
+.list li{
+  list-style-type: none;
+  padding: 10px;
+
+}
+
+.list li a{
+  text-decoration: none;
+
+}
+.logo_footer{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+
+
+
+/* Mobile view */
+@media(max-width:425px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar{
+    width: 100%;
+    height: auto;
+    background-color:#31006E;
+    display: inline-block;
+  
+  }
+  .logo{
+    float: left;
+    height: 100px;
+    width: 220px;
+  }
+  .logo img{
+    height: auto;
+    width: auto;
+  }
+  .menu{
+    display: none;
+  }
+  
+  /* intro section */
+  #intro{
+    background-color:#31006E ;
+  
+  }
+  .growing{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    height: 100vh;
+    font-size: 32px;
+    background-color:#31006E ;
+    color: white;
+  }
+  #white_box{
+    background-color: white;
+    padding: 20px;
+    margin: 30px; 
+    width: 370px;
+    height:280px; 
+  }
+  #white_box p{
+    padding: 20px;
+    color: red;
+  }
+  
+  /* who  we are */
+  
+  #whoweare{
+    padding: 80px 20px;
+    background-color: white;
+    background: url(images/building.png) no-repeat 80% 100%;
+    
+  
+  }
+  .w50{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 300px;
+  }
+  
+  #work{
+    background-color: #00ADEE;
+    padding:  80px 20px;
+    color: white;
+    text-align:center;
+    justify-content: center;
+    width: 100vw;
+    height:90vh ;
+  }
+  #work p{
+    width: 100vw;
+    height: 357px;
+  }
+  #work button{
+    margin: 20px;
+    padding: 10px;
+  }
+  #parallax{
+    height: 400px;
+    background-image: url(images/parallax-home.jpg);
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  #team{
+    padding-bottom: 120px;
+    background-image: url(images/join.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  
+  }
+  #team h2{
+    font-size: 40px;
+    padding: 40px;
+    font-weight: 400;
+  }
+  #team p{
+    margin: 20px;
+  }
+  #team #vacancy{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  #vacancy li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+  }
+  #vacancy li a {
+    text-decoration: none;
+    color: red;
+    margin: 15px;
+  
+  }
+  
+  /* search */
+  .search{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    height: 300px;
+  
+  }
+  .search button{
+    margin: 10px;
+  }
+  
+}
+
+
+
+/* Tablet view */
+
+@media(min-width:425px) and (max-width:768px){
+  
+  header{
+    background-color: #31006E;  
+  
+  }
+  .navbar{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 23px 0px;
+  
+  }
+  .logo{
+    display:flex;
+  }
+  .logo img{
+    height:30px;
+    width: 200px;
+  }
+  .menu{
+    display: none;
+    background-color: red;
+    border: red;
+    height: 20px;
+    width: 20px;
+  }
+  #intro{
+    background-color:#31006E ;
+    background-image: none;
+    height: 320px;
+    padding: 2.5rem;
+    
+  }
+  #intro .growing{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 26px;
+  }
+  #white_box{
+    height:200px;
+    width: 480px;
+    background-color: white;
+    padding: 2rem;
+  
+  }
+  #white_box p{
+    color: red;
+  }
+}

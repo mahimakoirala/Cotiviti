@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  background-color: #31006E;  
+
+}
+.navbar{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 23px 0px;
+
+}
+.logo{
+  display:flex;
+}
+.logo img{
+  height:30px;
+  width: 200px;
+}
+.menu{
+  display: none;
+  background-color: red;
+  border: red;
+  height: 20px;
+  width: 20px;
+}
+#intro{
+  background-color:#31006E ;
+  height: 320px;
+  padding: 2.5rem;
+  
+}
+#intro .growing{
+  color: white;
+  padding-bottom: 20px;
+  font-size: 26px;
+}
+#white_box{
+  height:200px;
+  width: 480px;
+  background-color: white;
+  padding: 2rem;
+
+}
+#white_box p{
+  color: red;
+}
